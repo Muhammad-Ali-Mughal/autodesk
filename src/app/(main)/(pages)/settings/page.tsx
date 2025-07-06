@@ -1,5 +1,7 @@
+"use client";
 import ProfileForm from "@/components/forms/profile-form";
 import React from "react";
+import ProfilePicture from "./_components/profile-picture";
 
 type Props = {};
 
@@ -16,6 +18,11 @@ function Settings({}: Props) {
             Add or update your information
           </p>
         </div>
+        <ProfilePicture
+        // onDelete={removeProfileImage}
+        // userImage={user?.profileImage || ""}
+        // onUpload={uploadProfileImage}
+        />
         <ProfileForm />
       </div>
     </div>
